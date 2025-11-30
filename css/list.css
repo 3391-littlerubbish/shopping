@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'icomoon';
+    /* 这里需要换一下路径 ../ */
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.sk {
+    /* 它的实际位置竟然是理论位置的两倍 */
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+    height: 47px;
+}
+
+.sk_list ul li {
+    float: left;
+    padding: 0 30px;
+    line-height: 47px;
+}
+
+.sk_list ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+    height: 47px;
+}
+
+.sk_con ul li {
+    float: left;
+    height: 47px;
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sk_con ul li:last-child::after {
+    content: '';
+    font-family: 'icomoon';
+}
+
+.sk_bd ul li {
+    float: left;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+    /* 这个透明边框是为了在鼠标经过图片后出现边框，图片的位置不会因为边框的出现而动 */
+}
+
+.sk_bd ul li a img {
+    width: 288px;
+    height: 458px;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
